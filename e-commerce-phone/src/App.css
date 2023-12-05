@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mainBlue:#2a2a72;
+  --lightBlue:#009ffd;
+  --mainWhite:#f3f3f3;
+  --mainDark:#232528;
+  --mainYellow:#ffa400;
+}
+
+
+body {
+  font-family: sans-serif, Tahoma !important;
+  background: var(--mainWhite) !important;
+  color: var(--mainDark) !important;
+}
+
+.text-title {
+  font-family: cursive;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+.text-blue {
+  color: var(--mainBlue);
+}
+
+.text-bright {
+  color: var(--lightBlue);
+}
+/* Nav Bar */
+nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: var(--mainBlue);
+  margin: 5px;
+  color: #FFF;
+}
+
+nav a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 20px;
+}
+
+.cart-btn {
+  background-color: #009ffd;
+  padding: 5px 7px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+
+.all-products,
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+}
+.all-products .product,
+.items .item {
+  margin: 7px;
+  box-shadow: 1px 2px 3px 1px;
+  border-radius: 5px;
+  padding: 7px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.all-products .product img,
+.items .item img {
+  width: 100%;
+}
+.all-products .product span,
+.item span{
+  display: block;
+  padding: 5px;
+  margin: 5px 0;
+}
+.all-products .product .title,
+.item .title {
+  color: #0075ff;
+  font-weight: bold;
+}
+.all-products .product .price {
+  background-color: #009ffd;
+  color: #FFF;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.add-to-cart,
+.delete-item {
+  color: #FFF;
+  font-size: 20px;
+  background-color: #0075ff;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
