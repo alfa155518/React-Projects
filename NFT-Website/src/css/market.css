@@ -1,0 +1,233 @@
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color:#e250e5;
+    --second-color:#4b50e6;
+}
+
+body {
+    font-family: Arial, Tahoma, sans-serif;
+    background-color: #110030;
+}
+
+ul  {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.btn {
+    padding: 7px 10px;
+    border-radius: 30px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.container {
+    padding: 10px 20px;
+    margin: 10px auto;
+}
+
+/* Section Head Name */
+.section-name {
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: -190px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    line-height: 9;
+    padding: 0 20px;
+}
+
+
+
+/* Hero */
+
+.hero {
+    background-image: url('../assets/images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    padding: 15px;
+    margin-bottom: 60px;
+    height:30dvh;
+}
+.hero h1 {
+    text-align: center;
+    padding: 50px;
+    margin: 10px auto;
+    color: #FFF;
+}
+
+/* Inputs Filter Products */
+
+.product-filter {
+    padding: 10px;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product-filter .filter-left {
+    display: flex;
+    align-items: center;
+    gap: 50px
+}
+
+.product-filter form {
+    padding: 20px;
+    margin: 10px auto;
+}
+.product-filter form h6 {
+    color: #FFF;
+    font-size: 17px;
+    padding: 5px 0;
+    letter-spacing: 2px;
+}
+.product-filter form select {
+    padding: 8px 25px;
+    font-size: 14px;
+    color: #FFF;
+    border: none;
+    outline: none;
+    background-color: #343444;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.products .section-name {
+    padding: 0 20px;
+}
+
+.products .box span{
+    padding: 0 20px;
+}
+
+
+/* Product Details */
+
+.details-item {
+    padding: 20px;
+    margin: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+.details-item .item-img {
+    flex: 1;
+    width: 300px;
+    padding: 0 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.details-item .info {
+    flex: 1;
+    padding: 0 20px;
+}
+.details-item .info h1 {
+    color: #FFF;
+    padding: 20px 0;
+    margin: 20px auto;
+}
+.details-item .fans {
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px 0;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.details-item .fans .actions,
+.details-item .fans .options {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.details-item .fans .actions i span {
+    padding:0 10px;
+}
+
+.details-item .fans .options i {
+    padding: 10px;
+    background-color: var(--second-color);
+    border-radius: 50%;
+    line-height: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.details-item .info .creator {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    background-color: #303030d9;
+    padding: 10px;
+    border-radius: 5px;
+}
+.details-item .info img {
+    width: 64px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.details-item .info .creator-info {
+    padding: 0 10px;
+    color: #FFF;
+}
+.details-item .info .creator-info span {
+    color: #AAA;
+    margin: 5px auto;
+    display: block;
+}
+.details-item .info .creator-info h4 {
+    font-size: 20px;
+}
+.details-item .info .desc {
+    padding: 15px 0;
+    color: #FFF;
+    letter-spacing: 1px;
+}
+.details-item .info .desc p {
+    text-wrap: balance;
+    line-height: 1.6;
+}
+
+/* Media Screens */
+
+
+@media (max-width:442px) {
+    .product-filter {
+        display: none;
+    }
+}

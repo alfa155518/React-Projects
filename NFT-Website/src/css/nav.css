@@ -1,0 +1,150 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color:#e250e5;
+    --second-color:#4b50e6;
+}
+
+body {
+    font-family: Arial, Tahoma, sans-serif;
+}
+
+ul  {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.btn {
+    background-color: var(--second-color);
+    border: none;
+    padding: 7px 10px;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.container {
+    padding: 10px;
+    margin: 5px;
+}
+
+
+
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+.logo {
+    color: #FFF;
+}
+.logo h2 i {
+    background: linear-gradient(-45deg,#e250e5,#4b50e6,#e250e5,#4b50e6);
+    padding: 5px;
+    line-height: 20px;
+    border-radius: 51px;
+    font-size: 24px;
+}
+nav .links ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav .links ul li {
+    padding: 0 5px;
+    margin: 0 5px;
+    letter-spacing: 1px;
+}
+nav .links ul li a {
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+nav .links ul li:hover a {
+    color: var(--main-color);
+}
+
+nav .btn a {
+    padding: 0 10px;
+}
+
+.bars {
+    color: #FFF;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+    position: fixed;
+    z-index: 999999;
+    right: 0;
+    padding: 0 40px;
+}
+
+nav.active {
+    top: 0;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.bars.un-active {
+    position: absolute;
+}
+
+@media (max-width:767px) {
+    .bars {
+        display: block;
+    }
+    nav {
+    position: fixed;
+    background: var(--second-color);
+    padding: 10px;
+    flex-direction: column;
+    width: 100%;
+    top: -100%;
+    left: 0;
+    }
+    nav .links{
+        width: 100%;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    nav ul li {
+        width: 100%;
+    }   
+    nav ul a {
+        display: flex;
+        padding: 10px;
+        margin: 14px auto;
+        border-bottom: 1px solid #fff;
+    }   
+
+    nav .btn {
+        color: var(--second-color);
+        background:#FFF;
+    }
+    nav .btn a {
+        color: var(--second-color);
+    }
+}
+
+@media (max-width:250px) {
+    nav .logo {
+        display: none;
+    }
+}
