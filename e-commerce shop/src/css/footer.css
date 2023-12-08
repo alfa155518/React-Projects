@@ -1,0 +1,118 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary: #00A97F;
+    --light:rgba(133,198,218,255);
+    --dark:rgba(13,13,10,255);
+    --darker:rgba(234,157,90,255);
+    --lighter:#cbd6cf;
+    --lighter1:#c3dacc86;
+    --lighter2:#e4f0e9da;
+    --darken: #cca27e;
+    --color: rgb(16, 16, 16);
+    --search: #FF6000;
+    --primary1: #2b3d4c;
+    --primary2: #354d61;
+}
+
+body {
+    font-family: sans-serif,Tahoma,Arial;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    padding: 10px;
+    margin: 10px;
+}
+
+
+/* Footer */
+
+
+footer {
+    padding:10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--lighter2);
+    width: 100%;
+}
+
+footer ul {
+    flex: 1;
+    padding: 5px;
+    margin: 5px;
+}
+footer ul h2 {
+    padding-bottom: 16px;
+    color: var(--search);
+    letter-spacing: 2px;
+}
+footer ul li {
+    padding: 5px 0;
+    margin: 5px auto;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 16px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+footer ul li:hover {
+    color: var(--darker);
+}
+footer ul li span {
+    padding: 0 8px;
+    text-transform: capitalize;
+    color: var(--darker);
+    font-size: 17px;
+    text-wrap: balance;
+}
+footer ul .socials {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer ul .socials li {
+    cursor: pointer;
+    font-size: 23px;
+    color: var(--darker);
+    transition: 1s ease-in;
+    -webkit-transition: 1s ease-in;
+    -moz-transition: 1s ease-in;
+    -ms-transition: 1s ease-in;
+    -o-transition: 1s ease-in;
+}
+footer ul .socials li:hover {
+    scale: 2.1;
+}
+footer ul li img {
+    width: 160px;
+    border: 2px solid var(--light);
+    border-radius: 5px;
+    margin: 5px auto;
+}
+
+.copy-right p {
+    text-align: center;
+    background-color: var(--primary);
+    padding: 10px 0;
+    color: #FFF;
+    letter-spacing: 2px;
+    font-size: 17px;
+    text-wrap: balance;
+}
+.copy-right p span {
+    color: var(--search);
+    font-size: 20px;
+}
